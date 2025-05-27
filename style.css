@@ -3,6 +3,7 @@ body {
   font-family: "Rubik";
   background: white;
   color: #333;
+  overflow-x: hidden;
 }
 
 .main-text {
@@ -131,6 +132,7 @@ body {
   position: absolute;
   top: 20%;
   left: 30%;
+  height: auto;
   width: 900px;
   z-index: 0;
   border-bottom-left-radius: 30%;
@@ -210,6 +212,7 @@ body {
   position: absolute;
   top: 10%;
   right: 100px;
+  height: auto;
   width: 900px;
   z-index: 0;
   border-bottom-right-radius: 30%;
@@ -515,9 +518,37 @@ body {
     display: flex;
     height: 20px;
   }
+  
+  .hero-shape {
+    height: auto;
+    width: 100%;
+    top: 30%;
+  }
+
+  .features-shape {
+    height: auto;
+    width: 100%;
+    top: 30%;
+  }
+
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    border-bottom: none;
+    padding-bottom: 10%;
+  }
+  .tab {
+    flex: none;
+    font-size: 22px;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .main-text {
     margin-top: 1%;
@@ -645,23 +676,24 @@ body {
 
   .features-image {
     width: 100%;
+    height: auto;
     text-align: center;
   }
 
   .features-shape {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     max-width: 100vw;
     height: auto;
-    left: 0;
-    right: 0;
-    top: 40px;
+    top: 30%;
+    right: 30px;
     object-fit: cover;
     transform: translateX(-30%);
     border-bottom-right-radius: 35%;
   }
 
   .features-illustration {
+    height: auto;
     width: 100%;
     padding-left: 0;
     clip-path: none;
@@ -670,13 +702,14 @@ body {
   .features-text {
     right: 0;
     max-width: 100%;
-    padding: 50px 10px;
+    padding: 100px 10px;
     text-align: center;
     align-items: center;
   }
 
 
   .extension {
+    margin-top: 0px;
     margin-bottom: 100px;
     padding: 10px 20px;
   }
