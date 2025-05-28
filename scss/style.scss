@@ -1,16 +1,18 @@
 @use 'base/variables' as *;
 @use 'components/navbar';
+@use 'components/hero';
 @use 'media/navbar-media';
+@use 'media/hero-media';
 
 body {
   background: white;
   color: $color-text;
-  font-family: $font-stack;
+  font-family: $font-main;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: red;
+  color: blue;
   text-align: center;
 }
