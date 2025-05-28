@@ -1,0 +1,16 @@
+@use 'base/variables' as *;
+@use 'components/navbar';
+@use 'media/navbar-media';
+
+body {
+  background: white;
+  color: $color-text;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
