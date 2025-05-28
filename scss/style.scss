@@ -1,8 +1,20 @@
 @use 'base/variables' as *;
+@use 'base/globals';
 @use 'components/navbar';
 @use 'components/hero';
+@use 'components/features';
+@use 'components/extension';
+@use 'components/questions';
+@use 'components/newsletter';
+@use 'components/footer';
 @use 'media/navbar-media';
 @use 'media/hero-media';
+@use 'media/features-media';
+@use 'media/extension-media';
+@use 'media/questions-media';
+@use 'media/newsletter-media';
+@use 'media/footer-media';
+
 
 body {
   background: white;
