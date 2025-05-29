@@ -1,0 +1,21 @@
+@use '../base/variables' as vars;
+
+.extension {
+  max-width: vars.$container-width;
+  margin: vars.$spacing-6xl auto;
+  padding: vars.$spacing-4xl;
+  text-align: center;
+  margin-bottom: vars.$spacing-6xl;
+}
+
+.extension-header {
+  max-width: 700px;
+  margin: 0 auto vars.$spacing-4xl;
+}
+
+.extension-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px; // o usar vars.$gap-md si decides declararla
+  flex-wrap: wrap;
+}
