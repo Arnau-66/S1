@@ -29,9 +29,11 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .navbar-links a:hover {
   color: #f25f3a;
 }
+
 .navbar-links a.login-button {
   background: #f25f3a;
   color: white;
@@ -51,11 +53,13 @@
   flex: 1;
   min-width: 300px;
 }
+
 .hero-text h1 {
   font-size: 80px;
   margin-bottom: 50px;
   font-weight: 500;
 }
+
 .hero-text p {
   margin-bottom: 30px;
 }
@@ -66,6 +70,7 @@
   gap: 5%;
   align-items: center;
 }
+
 .hero-buttons .btn {
   text-decoration: none;
   padding: 25px 40px;
@@ -73,6 +78,7 @@
   font-weight: bold;
   font-size: 22px;
 }
+
 .hero-buttons .btn:hover {
   opacity: 0.7;
 }
@@ -169,18 +175,6 @@
     width: 100%;
     padding-right: 0;
   }
-}
-body {
-  background: white;
-  color: #333;
-  font-family: "Rubik", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: blue;
-  text-align: center;
-}
+} 
 
 /*# sourceMappingURL=style.css.map */

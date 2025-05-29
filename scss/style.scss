@@ -1,30 +1,25 @@
-@use 'base/variables' as *;
-@use 'base/globals';
+// Base
+
+@use 'base/reset';
+@use 'base/variables';
+@use 'base/globals.scss';
+
+// Components
+
 @use 'components/navbar';
 @use 'components/hero';
 @use 'components/features';
 @use 'components/extension';
 @use 'components/questions';
-@use 'components/newsletter';
 @use 'components/footer';
+@use 'components/newsletter';
+
+// Media queries
+
 @use 'media/navbar-media';
 @use 'media/hero-media';
 @use 'media/features-media';
 @use 'media/extension-media';
 @use 'media/questions-media';
-@use 'media/newsletter-media';
 @use 'media/footer-media';
-
-
-body {
-  background: white;
-  color: $color-text;
-  font-family: $font-main;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: blue;
-  text-align: center;
-}
+@use 'media/newsletter-media';
