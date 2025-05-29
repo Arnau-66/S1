@@ -1,10 +1,56 @@
-// Variables
+// _variables.scss
 
-$primary-color: #5271ff;
-$text-color: #333;
-$main-font: 'Rubik', sans-serif;
-$box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-$desktop-breakpoint: 1200px;
-$mobile-breakpoint: 900px;
+// -----------------------------
+// 🎨 Colores
+// -----------------------------
+$color-text: #333;
+$color-gray-light: #9e9e9e;
+$color-border: #eee;
+$color-accent: #f25f3a;
+$color-primary: #5271ff;
+$color-shadow-light: rgba(0, 0, 0, 0.1);
+$color-shadow-medium: rgba(0, 0, 0, 0.15);
 
+// -----------------------------
+// 🔠 Tipografías
+// -----------------------------
+$font-main: 'Rubik', sans-serif;
+$font-size-small: 14px;
+$font-size-base: 18px;
+$font-size-medium: 22px;
 
+// -----------------------------
+// 📏 Espaciado / medidas
+// -----------------------------
+$spacing-xs: 10px;
+$spacing-sm: 15px;
+$spacing-md: 20px;
+$spacing-lg: 25px;
+$spacing-xl: 30px;
+$spacing-2xl: 40px;
+$spacing-3xl: 50px;
+$spacing-4xl: 60px;
+$spacing-5xl: 100px;
+$spacing-6xl: 200px;
+
+// -----------------------------
+// 📐 Dimensiones
+// -----------------------------
+$container-width: 1200px;
+$form-width: 300px;
+$gap-large: 100px;
+
+// -----------------------------
+// 🌈 Otros
+// -----------------------------
+$border-radius-sm: 8px;
+$border-radius-md: 10px;
+$border-radius-xl: 25px;
+$hover-opacity: 0.7;
+$line-height-base: 1.5;
+
+// -----------------------------
+// 📱 Breakpoints
+// -----------------------------
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 900px;
