@@ -1,0 +1,56 @@
+@use '../base/variables' as vars;
+
+.features {
+  max-width: vars.$container-width;
+  margin: vars.$spacing-2xl auto;
+  padding: vars.$spacing-4xl vars.$spacing-4xl;
+}
+
+.features-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0% 30%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1000px;
+  margin: 0 auto vars.$spacing-5xl;
+  border-bottom: 1px solid vars.$color-border;
+  text-align: center;
+  gap: vars.$gap-large;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: vars.$color-gray-medium;
+  font-weight: normal;
+  cursor: pointer;
+  padding: vars.$spacing-md 0;
+  flex: 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #2c2c2c; // si se repite puedes declararlo
+  font-weight: bold;
+}
+
+.tab:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130%;
+  height: vars.$border-thin;
+  background-color: vars.$color-accent;
+  border-radius: vars.$border-radius-sm;
+}
