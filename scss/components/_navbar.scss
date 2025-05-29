@@ -18,13 +18,13 @@
 
 .logo {
   width: auto;
-  height: 40px; // no está repetido, lo dejamos fijo
+  height: 40px;
 }
 
 .navbar-links a {
-  margin-left: 90px; // no es un valor común, puedes dejarlo tal cual
+  margin-left: 90px;
   text-decoration: none;
-  color: vars.$color-gray-dark; // si defines esta variable, o usa directamente un color como #555
+  color: vars.$color-gray-dark;
   font-size: vars.$font-size-base;
   font-weight: 500;
   text-transform: uppercase;

@@ -1,0 +1,44 @@
+@use '../base/variables' as vars;
+
+.hero {
+  max-width: vars.$container-width;
+  margin: 0 auto;
+  padding: vars.$spacing-4xl vars.$spacing-4xl;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: vars.$spacing-3xl;
+  font-weight: 500;
+}
+
+.hero-text p {
+  margin-bottom: vars.$spacing-xl;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: left;
+  gap: 5%;
+  align-items: center;
+}
+
+.hero-buttons .btn {
+  text-decoration: none;
+  padding: vars.$spacing-md 35px;
+  border-radius: vars.$border-radius-md;
+  font-weight: bold;
+  font-size: vars.$font-size-small;
+}
+
+.hero-buttons .btn:hover {
+  opacity: vars.$hover-opacity;
+}
