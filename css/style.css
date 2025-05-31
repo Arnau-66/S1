@@ -2,6 +2,7 @@ body {
   font-family: "Rubik", sans-serif;
   background: #ffffff;
   color: #333;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -705,56 +706,58 @@ body {
 }
 
 .newsletter {
-  max-width: 1200px;
-  margin: 200px auto;
-  padding: 60px;
+  background-color: #5267df;
+  color: white;
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 200px auto 0px;
+  padding: 60px;
 }
-.newsletter .newsletter-subtitle {
-  font-size: 14px;
-  color: #f25f3a;
+
+.newsletter-subtitle {
+  letter-spacing: 3px;
+  font-size: 17px;
+  font-weight: 500;
   margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
 }
-.newsletter .newsletter-title {
-  font-size: 22px;
-  color: #333;
-  margin-bottom: 30px;
+
+.newsletter-title {
+  font-size: 40px;
   font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 1.4;
 }
-.newsletter .newsletter-form {
+
+.newsletter-form {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.newsletter .newsletter-form input[type=email] {
-  flex: 1 1 250px;
-  padding: 20px;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  font-size: 14px;
-  color: #333;
-  outline: none;
+
+.newsletter-form input {
+  padding: 25px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  max-width: 90%;
 }
-.newsletter .newsletter-form input[type=email]:focus {
-  border-color: #5271ff;
-}
-.newsletter .newsletter-form button {
-  background-color: #5271ff;
-  color: #ffffff;
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-size: 14px;
+
+.newsletter-form button {
+  background-color: #f25f3a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 35px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: opacity 0.3s;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.newsletter .newsletter-form button:hover {
+
+.newsletter-form button:hover {
   opacity: 0.7;
 }
 

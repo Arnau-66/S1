@@ -4,6 +4,7 @@ body {
   font-family: vars.$font-main;
   background: vars.$color-white;
   color: vars.$color-text;
+  overflow-x: hidden;
 }
 
 .btn {
