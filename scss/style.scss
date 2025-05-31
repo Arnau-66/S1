@@ -2,9 +2,9 @@
 
 // Base
 
-@use 'base/reset';
 @use 'base/variables';
 @use 'base/globals';
+@use 'base/responsive';
 
 // Components
 
@@ -16,12 +16,3 @@
 @use 'components/footer';
 @use 'components/newsletter';
 
-// Media queries
-
-@use 'media/navbar-media';
-@use 'media/hero-media';
-@use 'media/features-media';
-@use 'media/extension-media';
-@use 'media/questions-media';
-@use 'media/footer-media';
-@use 'media/newsletter-media';
