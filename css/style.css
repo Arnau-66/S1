@@ -146,6 +146,13 @@ body {
   padding: 60px 60px;
 }
 
+.features-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 700px;
+}
+
 .features-header {
   display: flex;
   align-items: center;
