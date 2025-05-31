@@ -6,11 +6,18 @@
   padding: vars.$spacing-4xl vars.$spacing-4xl;
 }
 
+.features-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
 .features-text {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
-  margin-left: 700px; 
+  margin-left: 50px; 
 }
 
 
