@@ -1,3 +1,18 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.hero-shape,
+.features-shape {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
@@ -290,7 +305,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .footer .footer-left {
   display: flex;

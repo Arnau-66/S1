@@ -1,0 +1,16 @@
+@use 'variables' as vars;
+
+body {
+  font-family: vars.$font-main;
+  background: vars.$color-white;
+  color: vars.$color-text;
+}
+
+.hero-shape,
+.features-shape {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
