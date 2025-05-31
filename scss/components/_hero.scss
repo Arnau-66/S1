@@ -9,6 +9,19 @@
   align-items: center;
 }
 
+.hero-image{
+  position: relative;
+  flex: 1;
+}
+
+.hero-shape {
+    border-bottom-left-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    top: 25%;
+    left: 15%;
+}
+
 .hero-text {
   flex: 1;
   min-width: 300px;

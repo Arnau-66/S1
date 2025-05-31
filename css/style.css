@@ -12,18 +12,6 @@ body {
   height: auto;
 }
 
-.hero-shape {
-  border-bottom-left-radius: 50%;
-  max-width: 400px;
-  top: 21%;
-}
-
-.features-shape {
-  border-bottom-right-radius: 50%;
-  max-width: 400px;
-  top: 40%;
-}
-
 .btn {
   text-decoration: none;
   padding: 20px 40px;
@@ -106,6 +94,19 @@ body {
   align-items: center;
 }
 
+.hero-image {
+  position: relative;
+  flex: 1;
+}
+
+.hero-shape {
+  border-bottom-left-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  top: 25%;
+  left: 15%;
+}
+
 .hero-text {
   flex: 1;
   min-width: 300px;
@@ -166,6 +167,12 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 0% 30%;
+}
+
+.features-shape {
+  border-bottom-right-radius: 50%;
+  max-width: 400px;
+  top: 40%;
 }
 
 .tabs {
