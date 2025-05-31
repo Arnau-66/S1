@@ -11,6 +11,49 @@ body {
   position: absolute;
   z-index: -1;
   width: 100%;
-  max-width: 400px;
   height: auto;
+}
+
+.hero-shape {
+    border-bottom-left-radius: 50%;
+    max-width: 400px;
+    top: 21%;
+}
+
+.features-shape {
+    border-bottom-right-radius: 50%;
+    max-width: 400px;
+    top: 40%;
+}
+
+.btn {
+  text-decoration: none;
+  padding: vars.$spacing-md vars.$spacing-2xl;
+  border-radius: vars.$border-radius-md;
+  font-weight: bold;
+  font-size: vars.$font-size-small;
+  background-color: vars.$color-primary;
+  color: vars.$color-white;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: vars.$hover-opacity;
+  }
+}
+
+.main-text {
+  margin-top: 1%;
+  font-size: vars.$font-size-base;
+  color: vars.$color-gray-light;
+  line-height: vars.$line-height-base;
+  padding-bottom: vars.$spacing-3xl;
+}
+
+.main-text-titles {
+  font-size: vars.$font-size-title;
+  font-weight: 500;
+  margin-bottom: vars.$spacing-md;
 }
