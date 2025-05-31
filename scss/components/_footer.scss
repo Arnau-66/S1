@@ -1,0 +1,54 @@
+@use '../base/variables' as vars;
+
+.footer {
+  background-color: vars.$color-gray-darker;
+  color: vars.$color-white;
+  padding: vars.$spacing-4xl vars.$spacing-4xl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: vars.$spacing-xl;
+
+    .footer-logo {
+      width: auto;
+      height: 40px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: vars.$spacing-lg;
+
+      a {
+        color: vars.$color-white;
+        text-decoration: none;
+        font-size: vars.$font-size-small;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: vars.$hover-opacity;
+        }
+      }
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: vars.$spacing-md;
+
+    a img {
+      width: 24px;
+      height: 24px;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: vars.$hover-opacity;
+      }
+    }
+  }
+}

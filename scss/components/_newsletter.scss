@@ -1,0 +1,62 @@
+@use '../base/variables' as vars;
+
+.newsletter {
+  max-width: vars.$container-width;
+  margin: vars.$spacing-6xl auto;
+  padding: vars.$spacing-4xl;
+  text-align: center;
+  background-color: vars.$color-white;
+  border-radius: vars.$border-radius-lg;
+  box-shadow: 0 8px 30px vars.$shadow-color;
+
+  .newsletter-subtitle {
+    font-size: vars.$font-size-small;
+    color: vars.$color-accent;
+    margin-bottom: vars.$spacing-md;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .newsletter-title {
+    font-size: vars.$font-size-medium;
+    color: vars.$color-text;
+    margin-bottom: vars.$spacing-xl;
+    font-weight: 500;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: vars.$spacing-md;
+
+    input[type='email'] {
+      flex: 1 1 250px;
+      padding: vars.$spacing-md;
+      border: 1px solid vars.$color-border;
+      border-radius: vars.$border-radius-md;
+      font-size: vars.$font-size-small;
+      color: vars.$color-text;
+      outline: none;
+
+      &:focus {
+        border-color: vars.$color-primary;
+      }
+    }
+
+    button {
+      background-color: vars.$color-primary;
+      color: vars.$color-white;
+      padding: vars.$spacing-md vars.$spacing-2xl;
+      border-radius: vars.$border-radius-md;
+      font-size: vars.$font-size-small;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: vars.$hover-opacity;
+      }
+    }
+  }
+}
