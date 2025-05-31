@@ -29,10 +29,28 @@
   padding: 0% 30%;
 }
 
+.features-image{
+  position: relative;
+  flex: 1;
+}
+
 .features-shape {
-    border-bottom-right-radius: 50%;
-    max-width: 400px;
-    top: 40%;
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  height: auto;
+  width: 700px;
+  z-index: 0;
+  border-bottom-right-radius: 30%;
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.features-illustration{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tabs {
