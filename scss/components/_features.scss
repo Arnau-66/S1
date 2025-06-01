@@ -1,0 +1,95 @@
+@use '../base/variables' as vars;
+
+.features {
+  max-width: vars.$container-width;
+  margin: vars.$spacing-2xl auto;
+  padding: vars.$spacing-4xl vars.$spacing-4xl;
+}
+
+.features-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.features-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 50px; 
+}
+
+
+.features-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0% 30%;
+}
+
+.features-image{
+  position: relative;
+  flex: 1;
+}
+
+.features-shape {
+  position: absolute;
+  top: 10%;
+  right: 100px;
+  height: auto;
+  width: 700px;
+  z-index: 0;
+  border-bottom-right-radius: 30%;
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.features-illustration{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1000px;
+  margin: 0 auto vars.$spacing-5xl;
+  border-bottom: 1px solid vars.$color-border;
+  text-align: center;
+  gap: vars.$gap-large;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: vars.$color-gray-medium;
+  font-weight: normal;
+  cursor: pointer;
+  padding: vars.$spacing-md 0;
+  flex: 1;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: #2c2c2c; // si se repite puedes declararlo
+  font-weight: bold;
+}
+
+.tab:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130%;
+  height: vars.$border-thin;
+  background-color: vars.$color-accent;
+  border-radius: vars.$border-radius-sm;
+}

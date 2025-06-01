@@ -1,0 +1,81 @@
+@use '../base/variables' as vars;
+
+.extension {
+  max-width: vars.$container-width;
+  margin: vars.$spacing-6xl auto;
+  padding: vars.$spacing-4xl;
+  text-align: center;
+  margin-bottom: vars.$spacing-6xl;
+}
+
+.extension-header {
+  max-width: 700px;
+  margin: 0 auto vars.$spacing-4xl;
+}
+
+.extension-cards {
+  display: flex;
+  justify-content: center;
+  gap: vars.$gap-md;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: vars.$color-white;
+  border-radius: vars.$border-radius-lg;
+  box-shadow: 0 8px 30px vars.$shadow-color;
+  padding: vars.$spacing-xl vars.$spacing-lg vars.$spacing-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.card-logo {
+  width: 100px;
+}
+
+.card h3 {
+  font-size: vars.$font-size-medium;
+  margin-bottom: 0;
+}
+
+.card .version {
+  font-size: vars.$font-size-base;
+  color: vars.$color-gray-light;
+  margin-top: vars.$spacing-md;
+  margin-bottom: vars.$spacing-4xl;
+}
+
+.card-separator {
+  border-top: vars.$border-thick dotted vars.$color-border;
+}
+
+.card-btn {
+  background-color: vars.$color-primary;
+  color: vars.$color-white;
+  padding: vars.$spacing-md vars.$spacing-2xl;
+  border-radius: vars.$border-radius-md;
+  text-decoration: none;
+  font-size: vars.$font-size-small;
+  font-weight: 500;
+  box-shadow: 0px 4px 15px vars.$shadow-color;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: vars.$hover-opacity;
+  }
+}
+
+.card-chrome {
+  position: relative;
+  top: -40px;
+}
+
+.card-opera {
+  position: relative;
+  top: 40px;
+}
