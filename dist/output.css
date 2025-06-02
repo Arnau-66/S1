@@ -660,6 +660,22 @@ video {
   height: 1rem;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
+.h-\[1200px\] {
+  height: 1200px;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -670,6 +686,10 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .max-w-2xl {
